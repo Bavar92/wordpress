@@ -18,9 +18,7 @@ header('X-UA-Compatible: IE=Edge');
 <div id="main">
    <header>
       <div class="container">
-         <a id="logo" href="<?php echo get_option('home') ?>">
-            <img src="<?php echo theme('images/logo.png'); ?>" alt="logo">
-         </a>
+         <?php echo get_custom_logo(); ?>
          <div id="menuOpen"><span></span></div>
          <nav id="mainMenu">
             <?php wp_nav_menu(array('container' => false, 'items_wrap' => '<ul id="%1$s">%3$s</ul>', 'theme_location' => 'main_menu')); ?>
