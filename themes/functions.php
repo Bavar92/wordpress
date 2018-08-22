@@ -307,3 +307,5 @@ function some() {
     return $soc;
 }
 add_shortcode("social", "some");
+
+add_theme_support('custom-logo');
